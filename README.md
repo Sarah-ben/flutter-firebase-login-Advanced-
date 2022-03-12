@@ -1,6 +1,6 @@
 # flutter-firebase-login-Advanced-
 
-Login Form In Flutter Using:
+Login/Register Form In Flutter Using:
 
   -Firebase(Database)
   -Bloc(State Management)
