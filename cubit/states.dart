@@ -1,23 +1,17 @@
 
-abstract class EchatRegisterStates {}
+import 'package:echatapp/models/user_model/user_model.dart';
 
-class EchatRegisterInitialState extends EchatRegisterStates{}
-class EchatRegisterLoadingState extends EchatRegisterStates{}
-class EchatRegisterSuccessState extends EchatRegisterStates{
+abstract class EchatLoginStates {}
+
+class EchatLoginInitialState extends EchatLoginStates{}
+class EchatLoginLoadingState extends EchatLoginStates{}
+class EchatLoginSuccessState extends EchatLoginStates{
   final String uid;
-  EchatRegisterSuccessState(this.uid);
+  EchatLoginSuccessState(this.uid);
 }
-class EchatRegisterErrorState extends EchatRegisterStates{
-  final String error;
-  EchatRegisterErrorState(this.error);
+class EchatLoginErrorState extends EchatLoginStates{
+  final  onError;
+  EchatLoginErrorState(this.onError);
 }
-class EchatCreateUserSuccessState extends EchatRegisterStates{
-final String uid;
-EchatCreateUserSuccessState(this.uid);
-}
-class EchatCreateUserErrorState extends EchatRegisterStates{
-  final  error;
-  EchatCreateUserErrorState(this.error);
-}
-class EchatRegChangePasswordVisibilityState extends EchatRegisterStates{}
+class EchatChangePasswordVisibilityState extends EchatLoginStates{}
 
